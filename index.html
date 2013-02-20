@@ -84,6 +84,7 @@
 
           <ul class='inline pagination-centered'>
             <li><a href="#suggest_a_speaker" role='button' data-toggle='modal' class='btn btn-primary btn-large'>Suggest a Speaker/Topic</a></li>
+            <li><a href="#send_feedback" role='button' data-toggle='modal' class='btn btn-primary btn-large'>Send Feedback</a></li>
           </ul>
         </div>
 
@@ -161,6 +162,18 @@
       <div class='modal-footer'></div>
     </div>
 
+
+    <div id="send_feedback" class='modal hide fade'>
+      <div class='modal-header'>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Send Feedback</h3>
+      </div>
+
+      <div id="wufoo-m7x3z9" class='modal-body'></div>
+
+      <div class='modal-footer'></div>
+    </div>
+
     <script type="text/javascript">
       var z7x3p3;(function(d, t) {
       var s = d.createElement(t), options = {
@@ -174,6 +187,23 @@
       s.onload = s.onreadystatechange = function() {
       var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
       try { z7x3p3 = new WufooForm();z7x3p3.initialize(options);z7x3p3.display(); } catch (e) {}};
+      var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+      })(document, 'script');
+    </script>
+
+    <script type="text/javascript">
+      var m7x3z9;(function(d, t) {
+      var s = d.createElement(t), options = {
+      'userName':'abilenesmalltalk', 
+      'formHash':'m7x3z9', 
+      'autoResize':true,
+      'height':'457',
+      'async':true,
+      'header':'hide'};
+      s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+      s.onload = s.onreadystatechange = function() {
+      var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+      try { m7x3z9 = new WufooForm();m7x3z9.initialize(options);m7x3z9.display(); } catch (e) {}};
       var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
       })(document, 'script');
     </script>
