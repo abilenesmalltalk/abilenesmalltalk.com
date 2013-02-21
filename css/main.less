@@ -8,10 +8,38 @@
     padding-top: 10px;
 
     a {
-      color: #eee;
+      color: #fff;
 
-      &:hover {
-        color: #fff;
+      &.social-icon {
+        padding: 6px;
+        text-decoration: none;
+        position: relative;
+
+        i {
+          position: relative;
+          z-index: 2;
+        }
+
+        span.icon-background {
+          position: absolute;
+          z-index: 1;
+        }
+
+        &.facebook:hover span.icon-background {
+          background-color: #3B5998;
+          top: 10px;
+          left: 13px;
+          width: 15px;
+          height: 22px;
+        }
+
+        &.twitter:hover span.icon-background {
+          background-color: #00ACED;
+          top: 10px;
+          left: 8px;
+          width: 20px;
+          height: 21px;
+        }
       }
     }
   }
