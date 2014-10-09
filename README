@@ -1,0 +1,9 @@
+# Setup
+
+Run `node server.js` to start the server, then browse to http://localhost:5005/
+to view the page.
+
+Make your edits to the `index.html` file and refresh the page to see the changes.
+
+Once finished, commit and push to GitHub, then login to the Smalltalk server and
+do a `git pull` to update the site.
