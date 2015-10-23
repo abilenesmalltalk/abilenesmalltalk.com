@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html ng-app="smalltalk" ng-cloak>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+          href="//cdn.gitcdn.xyz/cdn/angular/bower-material/HEAD/angular-material.min.css">
+    <link rel="stylesheet"
+          href="//fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link rel="stylesheet"
+          href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/smalltalk.css">
+  </head>
+
+  <body layout-gt-sm="column" layout-align="center center" layout-fill
+        ng-controller="EventController as event">
+    <md-whiteframe id="invitation" class="md-whiteframe-24dp"
+                   layout="column" layout-gt-sm="row" layout-align-gt-sm="center center">
+
+      <div id="widgets" layout-gt-sm="column">
+        <md-content layout="column">
+
+          <md-whiteframe id="widget-calendar" class="md-whiteframe-7dp">
+            <md-calendar ng-model="event.date" md-min-date="event.mindate"
+                         md-max-date="event.maxdate">
+            </md-calendar>
+
+            <md-divider></md-divider>
+
+            <div id="time" class="center-text">
+              {{event.date | date:'longDate'}}
+              at {{event.time | date:'shortTime'}}
+              (Central)
+            </div>
+          </md-whiteframe>
+
+          <md-whiteframe class="md-whiteframe-7dp">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13464.568563546653!2d-99.709879!3d32.4688897!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45c16cb964db6ff8!2sMargaret-Herman+Brown+Library!5e0!3m2!1sen!2sus!4v1445462653244"
+                width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </md-whiteframe>
+        </md-content>
+      </div>
+
+      <div id="info" layout-gt-sm="column" flex-gt-sm>
+        <md-content layout-gt-sm="column">
+          <div class='center-text logo'><img src='/images/logo.jpg'/></div>
+
+          <div class="center-text md-display-1">Abilene Smalltalk</div>
+
+          <div class='center-text md-subhead'>3 Talks - 30 Minutes - Infinite Possibilities</div>
+
+          <p class="md-body-1">
+            The next Smalltalk will be held on November 17th at 6:00pm at
+            Abilene Christian University's Library Atrium in front of the
+            Maker Lab.
+          </p>
+
+          <p class="md-body-1">
+            Snacks, drinks and location are being graciously provided by
+            <a href='http://acu.edu/'>Abilene Christian University</a>
+            as part of their
+            <a href="http://blogs.acu.edu/startupweek">ongoing efforts</a>
+            to support
+            <a href='http://www.gew.co'>Global Entrepreneurship Week</a>.
+          </p>
+
+          <p layout-gt-sm="row" layout-align="start">
+            <md-button class="md-raised md-primary"
+                       href="http://www.meetup.com/Abilene-Smalltalk/events/226240254/">RSVP Now
+            </md-button>
+          </p>
+        </md-content>
+      </div>
+
+      <div id="social" layout="row" layout-align="end end">
+        <md-button class="md-fab md-mini" href="https://twitter.com/smalltalkabi">
+          <md-icon md-font-icon="fa-twitter" class="fa" alt="Smalltalk on Twitter"></md-icon>
+          <md-tooltip md-direction="top">Smalltalk on Twitter</md-tooltip>
+        </md-button>
+
+        <md-button class="md-fab md-mini" href="https://www.facebook.com/AbileneSmalltalk/">
+          <md-icon md-font-icon="fa-facebook" class="fa" alt="Smalltalk on Facebook"></md-icon>
+          <md-tooltip md-direction="top">Smalltalk on Facebook</md-tooltip>
+        </md-button>
+
+        <md-fab-speed-dial md-direction="up" class="md-fling">
+          <md-fab-trigger>
+            <md-button class="md-fab md-mini">
+              <md-icon md-font-icon="fa-user" class="fa" alt="Who Runs Smalltalk"></md-icon>
+              <md-tooltip md-direction="top">Who's Behind This?</md-tooltip>
+            </md-button>
+          </md-fab-trigger>
+
+          <md-fab-actions>
+            <md-button class="md-fab md-mini topher" href='https://twitter.com/topherfangio'>
+              <md-tooltip md-direction="left">Topher Fangio</md-tooltip>
+            </md-button>
+
+            <md-button class="md-fab md-mini robert" href='https://twitter.com/RobertBlas'>
+              <md-tooltip md-direction="left">Robert Blasingame</md-tooltip>
+            </md-button>
+
+            <md-button class="md-fab md-mini chad" href='https://twitter.com/chadhutchins'>
+              <md-tooltip md-direction="left">Chad Hutchins</md-tooltip>
+            </md-button>
+          </md-fab-actions>
+        </md-fab-speed-dial>
+      </div>
+    </md-whiteframe>
+
+    <!-- Angular Material Dependencies -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-aria.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-messages.min.js"></script>
+
+    <script src="//cdn.gitcdn.xyz/cdn/angular/bower-material/HEAD/angular-material.min.js"></script>
+
+    <script src="/js/smalltalk.js"></script>
+  </body>
+</html>
