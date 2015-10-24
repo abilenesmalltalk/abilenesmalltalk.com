@@ -55,6 +55,14 @@ html, body {
     background-color: #B71C1C;
 }
 
+#widget-calendar {
+    min-height: 320px;
+}
+
+#widget-map {
+    min-height: 250px;
+}
+
 #widget-calendar md-calendar {
     display: inline-block;
 }
@@ -64,6 +72,11 @@ html, body {
 
     /* Give the bottom more padding due to the social buttons */
     padding-bottom: 80px;
+}
+
+#info md-content > * {
+    /* Make sure the md-content's contents don't shrink */
+    flex-shrink: 0;
 }
 
 #social .md-button:not([disabled]).md-fab.md-focused {
@@ -168,13 +181,30 @@ md-calendar {
     display: none;
 }
 
+@media only screen and (max-width: 750px) {
+    #widgets {
+        width: 50%;
+    }
+
+    #widgets md-content {
+        align-items: center;
+    }
+
+    #widgets md-content md-whiteframe {
+        margin: 0 !important;
+        transform: scale(0.75);
+    }
+}
+
 /* Portrait and Landscape */
 @media only screen and (max-width: 600px) {
     #invitation {
         max-height: none;
+        height: auto;
     }
 
     #widgets {
+        width: 100%;
         height: auto;
         order: 2;
     }
