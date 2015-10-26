@@ -160,6 +160,7 @@ md-calendar {
 
 .md-calendar-date.md-calendar-selected-date .md-calendar-date-selection-indicator {
     background-color: #B71C1C;
+    color: white;
 }
 
 .md-calendar-day-header {
