@@ -46,11 +46,14 @@
   function EventController() {
     var self = this;
 
-    var realDate = new Date("November 17, 2015 18:00 CST");
+    // Setup our variables which change per event
+    self.realDate = new Date("April 12, 2016 18:00 CDT");
+    self.mindate = new Date("April 1, 2016");
+    self.maxdate = new Date("April 30, 2016");
+    self.meetupid = "228904085";
 
-    self.date = angular.copy(realDate);
-    self.time = angular.copy(realDate);
-    self.mindate = new Date("November 1, 2015");
-    self.maxdate = new Date("November 30, 2015");
+    // Create some easier-to-use dates/times
+    self.date = angular.copy(self.realDate);
+    self.time = angular.copy(self.realDate);
   }
 })();

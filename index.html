@@ -52,23 +52,22 @@
           <div class='center-text md-subhead'>3 Talks - 30 Minutes - Infinite Possibilities</div>
 
           <p class="md-body-1">
-            The next Smalltalk will be held on November 17th at 6:00pm at
-            Abilene Christian University's Library Atrium in front of the
-            Maker Lab.
+            The next Smalltalk will be held on {{event.date | date:'longDate'}}
+            at {{event.time | date:'shortTime'}} (Central) at Abilene Christian
+            University's Library Atrium in front of the Maker Lab.
           </p>
 
           <p class="md-body-1">
             Snacks, drinks and location are being graciously provided by
             <a href='http://acu.edu/'>Abilene Christian University</a>
             as part of their
-            <a href="http://blogs.acu.edu/startupweek">ongoing efforts</a>
-            to support
-            <a href='http://www.gew.co'>Global Entrepreneurship Week</a>.
+            <a href="http://blogs.acu.edu/springboard/">ongoing efforts</a>
+            to support entreprenuership in Abilene and the surrounding areas.
           </p>
 
           <p layout-gt-sm="row" layout-align="start">
             <md-button class="md-raised md-primary"
-                       href="http://www.meetup.com/Abilene-Smalltalk/events/226240254/">RSVP Now
+            ng-href="http://www.meetup.com/Abilene-Smalltalk/events/{{event.meetupid}}/">RSVP Now
             </md-button>
           </p>
         </md-content>
