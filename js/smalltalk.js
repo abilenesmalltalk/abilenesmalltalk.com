@@ -47,10 +47,10 @@
     var self = this;
 
     // Setup our variables which change per event
-    self.realDate = new Date("April 12, 2016 18:00 CDT");
-    self.mindate = new Date("April 1, 2016");
-    self.maxdate = new Date("April 30, 2016");
-    self.meetupid = "228904085";
+    self.realDate = new Date("September 6, 2016 18:00 CDT");
+    self.mindate = new Date("September 1, 2016");
+    self.maxdate = new Date("September 30, 2016");
+    self.meetupid = "228904118";
 
     // Create some easier-to-use dates/times
     self.date = angular.copy(self.realDate);
