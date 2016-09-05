@@ -43,7 +43,7 @@
     // Setup our controllers
     .controller('EventController', EventController);
 
-  function EventController() {
+  function EventController($timeout) {
     var self = this;
 
     // Setup our variables which change per event
@@ -55,5 +55,11 @@
     // Create some easier-to-use dates/times
     self.date = angular.copy(self.realDate);
     self.time = angular.copy(self.realDate);
+
+    $timeout(function() {
+      angular.element(document.body).addClass('loading-finished');
+    }, 0, false);
   }
+
+  EventController.$inject = ['$timeout'];
 })();
