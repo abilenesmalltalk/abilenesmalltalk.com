@@ -20,7 +20,7 @@
     var self = this;
 
     // Setup our variables which change per event
-    self.realDate = new Date("November 15, 2016 18:00 CDT");
+    self.realDate = new Date("November 15, 2016 18:00 CST");
     self.mindate = new Date("November 1, 2016");
     self.maxdate = new Date("November 30, 2016");
     self.meetupid = "228904135";
