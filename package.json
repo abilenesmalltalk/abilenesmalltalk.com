@@ -1,0 +1,16 @@
+{
+  "name": "abilenesmalltalk.com",
+  "description": "Website for Abilene Smalltalk",
+  "version": "2.1.0",
+  "repository": "https://github.com/abilenesmalltalk/abilenesmalltalk.com",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-material": "^1.1.1",
+    "connect": "^3.5.0",
+    "fontawesome": "^4.5.0",
+    "serve-static": "^1.11.1"
+  }
+}

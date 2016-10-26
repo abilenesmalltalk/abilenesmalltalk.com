@@ -1,5 +1,9 @@
 var connect = require('connect');
-connect.createServer(
-  connect.static(__dirname)
-).listen(5005);
+var serveStatic = require('serve-static');
+
+var app = connect();
+
+app.use(serveStatic('./'));
+app.listen(5005);
+
 console.log('Listening on port 5005...');
