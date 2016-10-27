@@ -10,5 +10,6 @@ changes. In rare cases, you may need/want to edit the `index.html` file as well.
 
 ### Releasing
 
-Once finished, commit and push to GitHub, then login to the Smalltalk server and
-do a `git pull` to update the site.
+Once finished, commit and push to GitHub, then login to http://getforge.io and
+click the "Deploy from GitHub" button. Finally, login to http://cloudflare.com
+and purge the cache so that everything gets properly updated.
