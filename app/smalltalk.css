@@ -211,6 +211,10 @@ md-calendar {
 
 /* Portrait and Landscape */
 @media only screen and (max-width: 600px) {
+    body {
+        display: block;
+    }
+
     #invitation {
         max-height: none;
         height: auto;
